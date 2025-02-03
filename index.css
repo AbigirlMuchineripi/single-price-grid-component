@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* || RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* || VARIABLES */
+:root {
+  /* COLORS */
+  --WHITE : #FFFFFF;
+  --TEAL: #2AB3B1;
+  --TEAL1:#1ed1ce;
+  --LIME: #C0DF33;
+  --GRAY:#9AA7BE;
+  --LIGHT-BLUE:#E6EFF5; 
+
+  /* TYPOGRAPHY */
+  --FF: "Karla", sans-serif;
+
+  /* ||MOBILE*/
+
+  --HEADING-MOB: bold 1.25rem var(--FF);
+  --GUARANTEE-TEXT-MOB: bold .9375rem/1.25rem var(--FF);
+  --GAIN-ACCESS-TEXT-MOB:normal 0.88rem/1.625rem var(--FF);
+  --MONTHLY-SUB-TEXT-MOB: bold 1.125rem var(--FF);
+  --PRICE-MOB: bold 2rem var(--FF);
+  --PM-TEXT-MOB: normal 1rem/1.625rem var(--FF);
+  --FULL-ACCESS-TEXT-MOB: normal 1rem/1.625rem var(--FF);
+  --SIGNUP-TEXT-MOB: bold 1rem var(--FF);
+  --WHY-TEXT-MOB: bold 1.13rem var(--FF);
+  --BENEFITS-TEXT-MOB: normal .875rem/1.25rem var(--FF);
+
+  /*|| DESKTOP*/
+  --HEADING: bold 1.5rem var(--FF);
+  --GUARANTEE-TEXT: bold 1.13rem var(--FF);
+  --GAIN-ACCESS-TEXT:normal 1rem/1.625rem var(--FF);
+  --MONTHLY-SUB-TEXT: bold 1.13rem var(--FF);
+  --PRICE: bold 2rem var(--FF);
+  --PM-TEXT: normal 1rem/26 var(--FF);
+  --FULL-ACCESS-TEXT: normal 1rem/26 var(--FF);
+  --SIGNUP-TEXT: bold 1rem var(--FF);
+  --WHY-TEXT: bold 1.13rem var(--FF);
+  --BENEFITS-TEXT: normal .875rem/1.25rem var(--FF);
+
+ /*SHADOWS*/ 
+ --SHADOW:0px 4px 4px 0px hsla(0, 0%, 0%, 25%);
+
+}
+
+/* || UTILITY CLASSES */
+.nowrap {
+  white-space: nowrap;
+}
+.center {
+  text-align: center;
+}
+
+/* MOBILE FIRST DESIGN */
+/* || GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+body {
+  min-height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
+  display: grid;
+  background-color: var(--LIGHT-BLUE);
+  place-content: center;
+}
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: normal;
+}
+.price-card{
+    height:722px ;
+    width: 311px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin:4.5rem 2rem 3.875rem 2rem;
+    box-shadow: var(--SHADOW);
+    background-color: var(--WHITE);
+}
+.price-card__header{
+    background-color: var(--WHITE);
+    max-width:100%;
+    height:207px;   
+    display: flex;
+    flex-flow: column;
+    margin:1.75rem 1rem 2rem 1.5rem;
+    align-items: left;
+}
+.price-card__title{
+    font:var(--HEADING-MOB);
+    color:var(--TEAL);
+    letter-spacing: -0.25px;
+    margin-bottom: 1.5rem;
+    width: 263px;
+    height: 23px;
+}
+.price-card__gurantee{
+  font: var(--GUARANTEE-TEXT-MOB);
+  color:var(--LIME);
+  text-align: left;
+  letter-spacing: -0.19px;
+  margin: 0rem 1.5rem 1rem 0rem;  
+}
+.price-card__description{ 
+  font: var(--GAIN-ACCESS-TEXT-MOB);
+  color:var(--GRAY); 
+  letter-spacing: -0.0106rem;
+  max-width: 263px;
+}
+.price-card__main{
+  height: 455px;
+  width: 362px;
+}
+.price-card__subscription{ 
+  display: flex;
+  flex-flow: column;
+}
+.price-card__subscription-div{
+ align-items:left;
+ background-color: var(--TEAL);
+ width: 100%;
+ height: 228px;
+ padding: 1.5rem;
+}
+.price-card__sub-title{
+  font:var(--MONTHLY-SUB-TEXT-MOB);
+  color:var(--WHITE);
+  padding:0rem 5.0625rem 1.125rem 0rem;
+}
+.price-card__price-wrapper {
+  margin: 0rem 7.25rem 0.25rem 0rem;
+  width:147px;
+  height: 37px;
+  display: flex;
+  flex-flow: row;
+  gap: .6875rem;
+}
+.price-card__price-amount__div{
+  width:61px;
+  height: 37px;
+}
+.price-card__price-amount{
+  color: var(--WHITE);
+  font: var(--PRICE-MOB);  
+}
+.price-card__price-monthly__div{
+  width:75px;
+  height: 26px;
+}
+.price-card__monthly-label{
+  font: var(--PM-TEXT-MOB);
+  color: var(--WHITE);
+  opacity: 0.5;
+  white-space: nowrap;
+  padding:.375rem 0rem .3125rem 0rem; 
+}
+.price-card__price-description{
+  font: var(--FULL-ACCESS-TEXT-MOB);
+  color: var(--WHITE);
+  margin-top: 0.25rem;
+  margin-bottom: 1.625rem;
+}
+.cta-button {
+  width: 263px;
+  height:48px;
+  background-color: var(--LIME);
+  border-radius: 5px;
+  box-shadow: var(--SHADOW);
+  margin: 0rem 1.5rem 1.5rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cta-link{
+  color: var(--WHITE);
+  text-decoration: none;
+  font: var(--SIGNUP-TEXT-MOB);
+  margin: .9375rem 6.375rem .875rem 6.375rem;
+  white-space: nowrap; 
+}
+.price-card__benefits{
+  background-color: var(--TEAL1);
+  width: 311px;
+  height: 227px;
+}
+.price-card__benefits-title{
+  padding: 1.5rem 14rem 1.125rem 1.5rem;
+  font: var(--WHY-TEXT);
+  color: var(--WHITE);
+}
+.price-card__benefits-list{
+  margin: 0rem 3.0625rem 1.5rem 1.5rem;
+  list-style-type: none;
+  opacity: 0.75;
+  font: var(--BENEFITS-TEXT-MOB);
+  color: var(--WHITE);
+  letter-spacing: -0.17px;
+}
+/*DESKTOP DESIGN*/
+@media screen and (min-width:768px){  
+  .price-card{
+    height:475px ;
+    width: 635px;
+    border-radius: 8px;   
+    margin:10.1875rem 25.125rem 10.125rem 25.1875rem;    
+  
+}
+
+.price-card__header{        
+    height:216px; 
+    margin: 2.5rem ;
+   
+ 
+}
+.price-card__title{
+    font:var(--HEADING);   
+    letter-spacing: -0.3px;   
+}
+.price-card__gurantee{
+  font: var(--GUARANTEE-TEXT); 
+  letter-spacing: -0.2px;
+  margin: 0rem 14.25rem .6875rem 0rem;
+  max-width: 367px;
+  white-space: nowrap; 
+}
+.price-card__description{ 
+ font:var(--GAIN-ACCESS-TEXT);
+ letter-spacing: -0.2px;
+ max-width: 555px;
+}
+.price-card__main{ 
+  display: flex;
+  height: 259px;
+  max-width: 100%;
+  
+
+  
+    
+}
+.price-card__subscription{  
+
+
+  
+}
+.price-card__subscription-div{
+ max-width:317px ;
+ height: 259px;
+ padding: 2.5rem 2.4375rem 1.625rem 2.5rem;
+}
+.price-card__sub-title{
+  font:var(--MONTHLY-SUB-TEXT);
+  padding:0rem 5.9375rem 1.125rem 0rem;/**/
+  white-space: nowrap;
+}
+.price-card__price-wrapper {
+  margin: 0rem 8.125rem 0.25rem 0rem;
+
+}
+.price-card__price-amount{
+  font: var(--PRICE);  
+}
+.price-card__monthly-label{
+  font: var(--PM-TEXT); 
+  
+}
+.price-card__price-description{
+  font: var(--FULL-ACCESS-TEXT);
+}
+.cta-button {
+  width: 237px; 
+  margin: 0rem 2.4375rem 2.5rem 0rem;
+ }
+.cta-link{ 
+  font: var(--SIGNUP-TEXT);
+  margin: .9375rem 5.5625rem .875rem 5.5625rem;
+}
+.price-card__benefits{
+  width: 318px;
+  height: 259px;
+}
+.price-card__benefits-title{
+  padding: 2.5rem 13.4375rem 1.125rem 0rem;
+}
+.price-card__benefits-list{
+  margin: 0rem 2.5rem 2.5rem 2.5rem;
+  font: var(--BENEFITS-TEXT);
+  
+}
+}
