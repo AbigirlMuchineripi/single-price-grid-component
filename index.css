@@ -247,7 +247,7 @@ h2 {
 }
 .price-card__main{ 
   display: flex;
-  height: 25.9vh;
+  height: 216px;
   width: 635px; 
 }
 .price-card__subscription{  
@@ -276,8 +276,7 @@ h2 {
   width: 237px; 
   margin: 0rem 2.4375rem 2.5rem 0rem;
  }
-.cta-link{ 
- 
+.cta-link{  
   font: var(--SIGNUP-TEXT);
   margin: .9375rem 5.5625rem .875rem 5.5625rem;
 }
@@ -290,7 +289,6 @@ h2 {
 }
 .price-card__benefits-list{
   margin: 0rem 2.5rem 2.5rem 2.5rem;
-  font: var(--BENEFITS-TEXT);
-  
+  font: var(--BENEFITS-TEXT);  
 }
 }
