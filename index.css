@@ -249,9 +249,7 @@ h2 {
   display: flex;
 
 }
-.price-card__subscription{  
-  display: flex;  
-}
+
 .price-card__subscription-div{
  max-width:317px ;
  height: 259px;
