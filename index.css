@@ -219,13 +219,12 @@ h2 {
     height:475px ;
     width: 635px;
     border-radius: 8px;   
-    margin:10.1875rem 25.125rem 10.125rem 25.1875rem;    
-  
+    margin:10.1875rem 25.125rem 10.125rem 25.1875rem;
 }
 
 .price-card__header{        
-    height:24.5vh; 
-    margin: 2.5rem ;  
+    height:216px; 
+    margin: 2.5rem 2.5rem 0rem 2.5rem;  
  
 }
 .price-card__title{
@@ -242,12 +241,15 @@ h2 {
 .price-card__description{ 
  font:var(--GAIN-ACCESS-TEXT);
  letter-spacing: -0.2px;
- max-width: 555px; 
+ max-width: 555px;
+ margin-bottom: 2.5rem; 
 
 }
-.price-card__main{ 
+.price-card__main{
+  height: 259px; 
   display: flex;
-
+  position:absolute;
+  margin-top: -3.5rem;
 }
 
 .price-card__subscription-div{
@@ -278,7 +280,7 @@ h2 {
   margin: .9375rem 5.5625rem .875rem 5.5625rem;
 }
 .price-card__benefits{
-  width: 318px;
+  width:  318px;
   height: 259px;
 }
 .price-card__benefits-title{
