@@ -214,19 +214,17 @@ h2 {
   letter-spacing: -0.17px;
 }
 /*DESKTOP DESIGN*/
-@media screen and (min-width:768px){  
+@media screen and (min-width:992px){  
   .price-card{
     height:475px ;
     width: 635px;
     border-radius: 8px;   
-    margin:10.1875rem 25.125rem 10.125rem 25.1875rem;    
-  
+    margin:10.1875rem 25.125rem 10.125rem 25.1875rem;
 }
 
 .price-card__header{        
     height:216px; 
-    margin: 2.5rem ;
-   
+    margin: 2.5rem 2.5rem 0rem 2.5rem;  
  
 }
 .price-card__title{
@@ -244,21 +242,17 @@ h2 {
  font:var(--GAIN-ACCESS-TEXT);
  letter-spacing: -0.2px;
  max-width: 555px;
+ margin-bottom: 2.5rem; 
+
 }
-.price-card__main{ 
+.price-card__main{
+  height: 259px; 
   display: flex;
-  height: 259px;
-  max-width: 100%;
+  position:absolute;
   
-
-  
-    
-}
-.price-card__subscription{  
-
-
   
 }
+
 .price-card__subscription-div{
  max-width:317px ;
  height: 259px;
@@ -276,31 +270,25 @@ h2 {
 .price-card__price-amount{
   font: var(--PRICE);  
 }
-.price-card__monthly-label{
-  font: var(--PM-TEXT); 
-  
-}
-.price-card__price-description{
-  font: var(--FULL-ACCESS-TEXT);
-}
+
+
 .cta-button {
   width: 237px; 
   margin: 0rem 2.4375rem 2.5rem 0rem;
  }
-.cta-link{ 
+.cta-link{  
   font: var(--SIGNUP-TEXT);
   margin: .9375rem 5.5625rem .875rem 5.5625rem;
 }
 .price-card__benefits{
-  width: 318px;
+  width:  318px;
   height: 259px;
 }
 .price-card__benefits-title{
-  padding: 2.5rem 13.4375rem 1.125rem 0rem;
+  padding: 2.5rem 13.4375rem 1.125rem 2.5rem;
 }
 .price-card__benefits-list{
   margin: 0rem 2.5rem 2.5rem 2.5rem;
-  font: var(--BENEFITS-TEXT);
-  
+  font: var(--BENEFITS-TEXT);  
 }
 }
