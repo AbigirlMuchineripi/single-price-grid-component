@@ -215,6 +215,7 @@ h2 {
 }
 /*DESKTOP DESIGN*/
 @media screen and (min-width:992px){  
+@media screen and (min-width:992px){  
   .price-card{
     height:475px ;
     width: 635px;
@@ -249,10 +250,7 @@ h2 {
   height: 259px; 
   display: flex;
   position:absolute;
-  
-  
 }
-
 .price-card__subscription-div{
  max-width:317px ;
  height: 259px;
@@ -290,5 +288,5 @@ h2 {
 .price-card__benefits-list{
   margin: 0rem 2.5rem 2.5rem 2.5rem;
   font: var(--BENEFITS-TEXT);  
-}
+ }
 }
