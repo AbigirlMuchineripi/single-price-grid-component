@@ -215,7 +215,7 @@ h2 {
 }
 /*DESKTOP DESIGN*/
 @media screen and (min-width:992px){  
-@media screen and (min-width:992px){  
+ 
   .price-card{
     height:475px ;
     width: 635px;
@@ -224,14 +224,15 @@ h2 {
 }
 
 .price-card__header{        
-    height:216px; 
-    margin: 2.5rem 2.5rem 0rem 2.5rem;  
- 
+  height:216px; 
+  margin: 2.5rem 2.5rem 0rem 2.5rem;  
+
 }
 .price-card__title{
     font:var(--HEADING);   
     letter-spacing: -0.3px;   
 }
+
 .price-card__gurantee{
   font: var(--GUARANTEE-TEXT); 
   letter-spacing: -0.2px;
@@ -242,14 +243,15 @@ h2 {
 .price-card__description{ 
  font:var(--GAIN-ACCESS-TEXT);
  letter-spacing: -0.2px;
- max-width: 555px;
- margin-bottom: 2.5rem; 
+ max-width: 555px; 
+ margin-bottom: 2.5rem;
 
 }
 .price-card__main{
   height: 259px; 
   display: flex;
   position:absolute;
+  
 }
 .price-card__subscription-div{
  max-width:317px ;
