@@ -41,7 +41,7 @@ img {
 
   /*|| DESKTOP*/
   --HEADING: bold 1.5rem var(--FF);
-  --GUARANTEE-TEXT: bold 1.13rem var(--FF);
+  --GUARANTEE-TEXT: bold 1.125rem var(--FF);
   --GAIN-ACCESS-TEXT:normal 1rem/1.625rem var(--FF);
   --MONTHLY-SUB-TEXT: bold 1.13rem var(--FF);
   --PRICE: bold 2rem var(--FF);
@@ -237,7 +237,7 @@ h2 {
 
 .price-card__gurantee{
   font: var(--GUARANTEE-TEXT); 
-  letter-spacing: -0.2px;
+  letter-spacing: -0.22px;
   margin: 0rem 14.25rem .6875rem 0rem;
   max-width: 367px;
   white-space: nowrap; 
